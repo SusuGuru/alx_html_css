@@ -1,183 +1,257 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+header {
+  background: url('header.png') center/cover no-repeat;
+  height: 100vh;
+  color: white;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
 }
-
-header.hero {
-  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-  color: #fff;
-  padding: 4rem 1rem;
+header nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  font-weight: bold;
 }
-
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
+header nav img {
+  height: 30px;
 }
-
-.hero-content p {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
 }
-
-button {
-  padding: 0.7rem 1.5rem;
-  font-size: 1rem;
-  background: #a64ac9;
-  color: #fff;
+header nav ul li {
+  cursor: pointer;
+}
+.hero h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+.hero p {
+  margin: 10px 0;
+}
+.btn-purple {
+  background: linear-gradient(to right, #c271ff, #a56dff);
+  color: white;
+  padding: 12px 30px;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-top: 20px;
   cursor: pointer;
 }
 
-.mentors {
+.pros, .tutorials, .membership, .faq {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.pros h2, .tutorials h2, .membership h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.pros-container, .tutorials-container, .membership-container, .faq-container {
   display: flex;
   justify-content: center;
-  gap: 1rem;
-  margin-top: 2rem;
-}
-
-.mentor {
-  background: #fff;
-  color: #000;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-}
-
-.quote {
-  background: #c86dd7;
-  color: #fff;
-  padding: 2rem;
-}
-
-.courses {
-  padding: 2rem;
-  background: #fff;
-}
-
-.course-list {
-  display: flex;
-  justify-content: space-around;
-  gap: 1rem;
   flex-wrap: wrap;
+  gap: 40px;
 }
 
-.course {
+.pros-container div, .tutorials-container .card, .membership-container .column {
   text-align: center;
   max-width: 200px;
 }
 
-.course img {
-  width: 100%;
+.pros-container img, .tutorials-container .card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.tutorials-container .card {
+  background: white;
+  padding: 15px;
   border-radius: 10px;
+  width: 220px;
+}
+
+.tutorials-container .card img.play {
+  position: absolute;
+  width: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.testimonial {
+  background: #c271ff;
+  color: white;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial img {
+  border-radius: 50%;
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.testimonial p {
+  max-width: 600px;
+  font-size: 1.2rem;
+  margin: 0 auto 20px;
 }
 
 .membership {
-  background: #0f0c29;
-  color: #fff;
-  padding: 2rem;
+  background: #071629;
+  color: white;
 }
 
-.membership-section {
-  max-width: 1000px;
-  margin: 0 auto;
+.membership h2 {
+  color: white;
 }
 
-.membership-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.membership-item {
-  background: #1e1e3f;
-  padding: 1rem;
-  border-radius: 10px;
-}
-
-.membership-item .emoji {
-  font-size: 2rem;
+.membership .column img {
+  width: 50px;
 }
 
 .faq {
-  background: #f9f9f9;
-  padding: 2rem;
+  background: #ffffff;
+  color: #071629;
 }
 
 .faq h2 {
-  text-align: center;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 40px;
 }
 
-.questions {
+.faq-container {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.question {
-  max-width: 300px;
+  justify-content: center;
+  gap: 50px;
   text-align: left;
 }
 
+.faq-container div {
+  width: 400px;
+}
+
 footer {
-  background: #111;
-  color: #aaa;
+  background: #071629;
+  color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 40px 20px;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer .socials img {
+  width: 24px;
+  margin-left: 15px;
+}
+.hero {
+  background-image: url('header.png'); /* Replace with your actual image name */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .logo {
-  height: 50px;
-  vertical-align: middle;
-  font-size: 1.5rem;
+  height: 30px;
 }
 
-h1 {
-  display: inline-block;
-  margin: 0 0 0 10px;
-  font-size: 24px;
-  vertical-align: middle;
-}
-
-.pros {
-  padding: 40px 20px;
-  background-color: #f1f1f1;
-}
-
-.avatars {
+.nav-links {
+  list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 20px;
-  flex-wrap: wrap;
-}
-
-.avatar {
-  width: 150px;
-}
-
-.avatar img {
-  width: 100%;
-  border-radius: 12px;
-}
-
-.avatar p {
-  margin-top: 10px;
+  gap: 40px;
+  margin: 0;
   font-weight: bold;
 }
 
-.register-button {
-  padding: 0.7rem 1.5rem;
-  font-size: 1rem;
-  background: #a64ac9;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
+.nav-links li {
   cursor: pointer;
+}
+
+.hero-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-content h1 {
+  font-size: 64px;
+  margin: 0;
+}
+
+.subtext {
+  margin: 20px 0;
+  letter-spacing: 4px;
+  font-weight: 500;
+}
+
+.btn-purple {
+  background-color: #c271ff;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.learn-pros {
+  position: absolute;
+  bottom: 60px;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.learn-pros span {
+  color: #c271ff;
+  font-weight: bold;
+}
+img {
+  display: block; /* ensures spacing even if image fails */
+  width: 100%;
+  height: auto;
 }
