@@ -110,3 +110,307 @@ h1 {
   background: transparent;
   border: 1px solid #EF443B;
 }
+.quote {
+  background-color: #c271ff; /* use the exact color from Figma */
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
+}
+
+.quote-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.quote blockquote {
+  font-size: 22px;
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.author img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.author-info .name {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.author-info .title {
+  font-size: 14px;
+  opacity: 0.8;
+}
+.videos-list {
+  padding: 60px 20px;
+  background-color: #fff; /* or as per Figma */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.videos-list h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #333; /* adjust to Figma */
+}
+
+.videos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.video-card {
+  background-color: #f9f9f9; /* or from Figma */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+  transform: scale(1.03);
+}
+
+.video-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video-card h3 {
+  font-size: 1.25rem;
+  margin: 16px;
+  color: #222;
+}
+
+.video-card p {
+  font-size: 1rem;
+  margin: 0 16px 16px;
+  color: #666;
+  line-height: 1.4;
+}
+.membership {
+  background-color: #f5f7fa; /* Replace with exact Figma background */
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.membership h2 {
+  font-size: 2.5rem;
+  color: #222; /* Figma heading color */
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.membership p {
+  font-size: 1.125rem;
+  color: #555; /* Figma paragraph color */
+  max-width: 700px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+}
+
+.membership-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.membership-card {
+  background-color: #fff; /* Card background */
+  border-radius: 15px;
+  padding: 30px 20px;
+  width: 280px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.membership-card:hover {
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.membership-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #111; /* Card title color */
+}
+
+.membership-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #666; /* Card text color */
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.membership-card ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.membership-card ul li::before {
+  content: "✓";  /* or use an SVG/check icon */
+  position: absolute;
+  left: 0;
+  color: #27ae60; /* green checkmark color from*
+}
+  .faq {
+  background-color: #ffffff; /* adjust to Figma background */
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif; /* replace with Figma font */
+  color: #333; /* general text color */
+}
+
+.faq h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #222; /* Figma heading color */
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd; /* subtle divider */
+  padding: 20px 0;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-question {
+  font-weight: 600;
+  font-size: 1.125rem;
+  cursor: pointer;
+  position: relative;
+  padding-right: 30px;
+  color: #111; /* question text color */
+}
+
+.faq-question::after {
+  content: '+';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #0077ff; /* accent color */
+  transition: transform 0.3s ease;
+}
+
+.faq-item.open .faq-question::after {
+  content: '−'; /* minus sign when open */
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 10px;
+  color: #555; /* answer text color */
+}
+
+.faq-item.open .faq-answer {
+  max-height: 200px; /* adjust as needed for content */
+  margin-top: 15px;
+}
+.footer {
+  background-color: #222; /* dark footer background */
+  color: #bbb; /* light text */
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif; /* use Figma font */
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-logo {
+  flex: 1 1 200px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-nav {
+  flex: 2 1 400px;
+  display: flex;
+  gap: 40px;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav li {
+  margin-bottom: 12px;
+}
+
+.footer-nav a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #fff;
+}
+
+.footer-social {
+  flex: 1 1 150px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer-social a {
+  color: #bbb;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #0077ff; /* accent color */
+}
+
+.footer-copy {
+  text-align: center;
+  color: #777;
+  font-size: 0.875rem;
+  margin-top: 30px;
+  width: 100%;
+}
