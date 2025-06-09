@@ -1,33 +1,23 @@
-# Get Schooled Landing Page
+# Smile School Landing Page
 
-This is a responsive landing page for a fictional learning platform called **Get Schooled**.
+A simple HTML and CSS landing page for an imaginary "Smile School" website.
 
-## Features
+## 🌟 Features
 
+- Header with logo and navigation
 - Hero section with CTA
-- Mentor highlights
-- Popular tutorials display
+- Instructor highlights
+- Testimonial section
+- Tutorial cards
 - Free membership benefits
 - FAQ section
-- Clean, modern responsive layout
+- Footer with social media links
 
-## Technologies Used
+## 🛠 Tech Stack
 
 - HTML5
-- CSS3 (Flexbox)
-- Google Fonts / System UI
-- No JavaScript (static version)
+- CSS3
+- Font Awesome icons
 
-## How to Use
+## 📁 Project Structure
 
-1. Clone the repository.
-2. Open `index.html` in your browser.
-3. Customize content or styles via `styles.css`.
-
-## Screenshots
-
-![Landing Page Screenshot](./screenshot.png)
-
----
-
-Created for demo and learning purposes.
