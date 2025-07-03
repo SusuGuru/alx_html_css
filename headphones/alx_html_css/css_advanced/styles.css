@@ -1,0 +1,264 @@
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      color: #fff;
+      background-color: #fff;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header {
+      background: url('header') center/cover no-repeat;
+      text-align: center;
+      padding: 100px 20px 50px;
+      position: relative;
+      color: #fff;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.5), #071629);
+      z-index: 1;
+    }
+
+    header * {
+      position: relative;
+      z-index: 2;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    .nav img {
+      height: 40px;
+    }
+
+    .nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav ul li {
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+
+    .btn-primary {
+      background: linear-gradient(to bottom, #C271FF, #9E52D9);
+      padding: 10px 30px;
+      border-radius: 30px;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      margin: 20px 0;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .pros {
+      background-color: #071629;
+    }
+
+    .pros h2 {
+      color: white;
+    }
+
+    .pros h2 span {
+      color: #C271FF;
+    }
+
+    .pros .cards {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .pros .card {
+      width: 150px;
+    }
+
+    .pros img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+
+    .testimonial {
+      background-color: #C271FF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      color: white;
+    }
+
+    .testimonial img {
+      border-radius: 50%;
+      width: 150px;
+    }
+
+    .testimonial blockquote {
+      max-width: 500px;
+      text-align: left;
+      font-style: italic;
+    }
+
+    .testimonial .name {
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    .popular h2 {
+      color: #071629;
+    }
+
+    .popular h2 span {
+      color: #C271FF;
+    }
+
+    .tutorials {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+      color: #071629;
+    }
+
+    .tutorial {
+      width: 200px;
+      text-align: left;
+    }
+
+    .tutorial img {
+      width: 100%;
+      border-radius: 5px;
+      position: relative;
+    }
+
+    .tutorial .info {
+      margin-top: 10px;
+    }
+
+    .tutorial .author {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+    }
+
+    .tutorial .author img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+
+    .tutorial .meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+
+    .membership {
+      background-color: #071629;
+      color: white;
+    }
+
+    .membership h2 {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+
+    .membership h2 span {
+      color: #C271FF;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 40px;
+    }
+
+    .features div {
+      max-width: 150px;
+    }
+
+    .features img {
+      width: 50px;
+      margin-bottom: 10px;
+    }
+
+    .faq {
+      color: #071629;
+      background-color: #fff;
+    }
+
+    .faq h2 {
+      margin-bottom: 40px;
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .faq h3 {
+      font-size: 16px;
+    }
+
+    footer {
+      background-color: #071629;
+      padding: 40px 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    footer .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    footer img {
+      height: 40px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .social-icons img {
+      width: 30px;
+    }
+
+    .copyright {
+      font-size: 12px;
+      margin-top: 10px;
+    }
