@@ -1,0 +1,30 @@
+/* Make body a flex container with column layout */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* full viewport height */
+  margin: 0;
+}
+
+/* Make main a flex container with row layout */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto; /* grow to fill available space */
+}
+
+/* article takes 2/3 width */
+article {
+  flex: 2;
+  overflow-y: auto;
+  padding: 1em;
+  background-color: #fafafa;
+}
+
+/* aside takes 1/3 width */
+aside {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1em;
+  background-color: #eee;
+}
